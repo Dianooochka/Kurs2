@@ -1,0 +1,84 @@
+* {
+  font-family: monospace;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Set the container to fill the height of the viewport */
+}
+
+.card {
+  top: 50px;
+  left: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 800px;
+  margin: auto;
+  text-align: center;
+  z-index: 1;
+  text-align: center;
+  position: absolute;
+  background-color: azure;
+  clear: left;
+}
+
+img {
+  float: left;
+  width: 300px;
+  margin-right: 20px;
+  padding: 10px;
+}
+.title {
+  color: black;
+  font-size: 25px;
+}
+
+p {
+  font-size: 15px;
+}
+
+#Btn2 {
+  border: none;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  background-color: rgb(0, 0, 0);
+  width: 40%;
+  height: 40px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  font-size: 24px;
+  margin: 0 5px;
+}
+
+#insta {
+  color: palevioletred;
+}
+#telegram {
+  color: blue;
+}
+#email {
+  color: rgb(0, 0, 0);
+}
+#number {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
