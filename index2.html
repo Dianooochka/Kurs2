@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style2.css" />
   </head>
   <body>
     <div class="container">
-      <h1>Реєстрація</h1>
-      <form action="/register" method="post">
+      <h1>Авторизація</h1>
+      <form action="/login" method="post">
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required /><br /><br />
 
@@ -22,18 +22,13 @@
           required
         /><br /><br />
 
-        <label for="confirm-password">Підтвердження пароля:</label>
-        <input
-          type="password"
-          id="confirm-password"
-          name="confirm-password"
-          required
-        /><br /><br />
+        <input type="checkbox" id="remember" name="remember" />
+        <label for="remember">Запам'ятати пароль</label><br /><br />
 
-        <input type="submit" value="Зареєструватися" />
+        <input type="submit" value="Увійти" />
       </form>
     </div>
-    <a href="index2.html" target="_blank"> вже зареєстровані?</a><br />
+    <a href="index.html" target="_blank"> ще не зареєстровані?</a><br />
     <a href="index3.html" target="_blank"> пошук анонімно</a>
   </body>
 </html>
