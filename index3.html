@@ -5,69 +5,130 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style3.css" />
   </head>
   <body>
     <form>
-      <label for="body-type">Тип кузова:</label>
-      <select id="body-type" name="body-type">
-        <option value="">Оберіть тип кузова</option>
-        <option value="sedan">Седан</option>
-        <option value="suv">SUV</option>
-        <option value="hatchback">Хетчбек</option>
-      </select>
+      <fieldset>
+        <legend>Оберіть авто своєї мрії</legend>
+        <legend>Тип кузова:</legend>
+        <select id="body-type" name="body-type">
+          <option value="pikap">Пікап</option>
+          <option value="sedan">Седан</option>
+          <option value="suv">SUV</option>
+          <option value="hatchback">Хетчбек</option>
+          <option value="uni">Універсал</option>
+        </select>
+        <br /><br />
 
-      <label for="brand">Марка авто:</label>
-      <input type="text" id="brand" name="brand" />
+        <legend>Марка авто:</legend>
+        <input type="text" id="brand" name="brand" />
+        <br /><br />
 
-      <label for="country">Країна виробник:</label>
-      <input type="text" id="country" name="country" />
+        <legend>Країна виробник:</legend>
+        <label for="germany">Германия</label>
+        <input
+          type="checkbox"
+          id="germany"
+          name="countries"
+          value="Germany"
+        /><br />
 
-      <label for="price-from">Ціна (від):</label>
-      <input type="number" id="price-from" name="price-from" />
+        <label for="japan">Япония</label>
+        <input
+          type="checkbox"
+          id="japan"
+          name="countries"
+          value="Japan"
+        /><br />
 
-      <label for="price-to">Ціна (до):</label>
-      <input name="price" type="range" min="0" max="1000000" />
+        <label for="korea">Корея</label>
+        <input
+          type="checkbox"
+          id="korea"
+          name="countries"
+          value="korea"
+        /><br />
 
-      <label for="year-from">Рік випуску (від):</label>
-      <input type="number" id="year-from" name="year-from" />
+        <label for="usa">США</label>
+        <input type="checkbox" id="usa" name="countries" value="usa" /><br />
 
-      <label for="year-to">Рік випуску (до):</label>
-      <input type="number" id="year-to" name="year-to" />
+        <label for="france">Франція</label>
+        <input
+          type="checkbox"
+          id="france"
+          name="countries"
+          value="france"
+        /><br />
+        <br /><br />
 
-      <label for="condition">Стан:</label>
-      <select id="condition" name="condition" multiple>
-        <option value="damaged">Битий</option>
-        <option value="on-credit">У кредиті</option>
-        <option value="unregistered">Нерозмитнений</option>
-      </select>
+        <legend>Ціна:</legend>
+        <label for="price-from">Ціна від 0:</label>
+        <input name="price" type="range" min="0" max="1000000" />
+        <label for="price-to">до 1000000</label>
+        <br /><br />
 
-      <label for="fuel-type">Тип палива:</label>
-      <input type="text" id="fuel-type" name="fuel-type" />
+        <legend>Рік випуску:</legend>
+        <label for="year-from">від 2000р:</label>
+        <input name="year" type="range" min="2000" max="2022" />
+        <label for="year-to">до 2022р</label>
+        <br /><br />
 
-      <label for="transmission">Тип коробки передач:</label>
-      <input type="text" id="transmission" name="transmission" />
+        <legend>Стан:</legend>
+        <input type="checkbox" />
+        <label for="damaged">Битий</label><br />
+        <input type="checkbox" />
+        <label for="on-credit">У кредиті</label><br />
+        <input type="checkbox" />
+        <label for="unregistered">Нерозмитнений</label><br />
+        <br /><br />
 
-      <label for="color">Колір:</label>
-      <input type="text" id="color" name="color" />
+        <legend>Тип коробки передач:</legend>
+        <input type="radio" />
+        <label for="meh">Механічна</label><br />
 
-      <label for="comfort">Комфорт:</label>
-      <input
-        type="checkbox"
-        id="comfort-leather"
-        name="comfort"
-        value="leather"
-      />
-      <label for="comfort-leather">Люк</label>
-      <input
-        type="checkbox"
-        id="comfort-leather-seats"
-        name="comfort"
-        value="leather-seats"
-      />
-      <label for="comfort-leather-seats">Шкіряний салон</label>
+        <input type="radio" />
+        <label for="avt">Автоматична</label><br />
 
-      <button type="submit">Пошук</button>
+        <input type="radio" />
+        <label for="var">Варіативна</label><br />
+        <br /><br />
+
+        <legend>Тип палива:</legend>
+        <input type="radio" />
+        <label for="diz">Дизель</label><br />
+
+        <input type="radio" />
+        <label for="benz">Бензин</label><br />
+
+        <input type="radio" />
+        <label for="elek">Електро</label><br />
+        <br /><br />
+
+        <legend>Колір:</legend>
+        <input type="color" />
+        <br /><br /><br />
+
+        <legend>Комфорт:</legend>
+        <label for="comfort-leather">Люк</label>
+        <input
+          type="checkbox"
+          id="comfort-leather"
+          name="comfort"
+          value="leather"
+        />
+
+        <label for="comfort-leather-seats">Шкіряний салон</label>
+        <input
+          type="checkbox"
+          id="comfort-leather-seats"
+          name="comfort"
+          value="leather-seats"
+        />
+      </fieldset>
+      <br /><br />
+      <button type="submit">Пошук</button><br />
+      <a href="index.html" target="_blank">Хочете зареєструватись?</a><br />
+      <a href="index2.html" target="_blank">Хочете авторизуватись?</a><br />
     </form>
   </body>
 </html>
