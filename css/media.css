@@ -1,2 +1,19 @@
-@media (min-width: 992px) {
+@media (max-width: 768px) {
+  .wrap2 img + img {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .text-wrap {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .wrap2 img + img {
+    display: initial;
+  }
+  .img-wrap {
+    flex-direction: column;
+  }
 }
