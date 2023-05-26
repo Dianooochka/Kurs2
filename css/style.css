@@ -56,8 +56,10 @@ img {
 
 .text-wrap {
   position: relative;
-  right: -70px;
+  right: 15px;
   max-width: 310px;
+
+  z-index: 1;
 }
 
 .wrap1 {
@@ -81,17 +83,33 @@ img {
 #man3 {
   width: 286px;
   height: 357px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
+#man3 {
+  margin-left: 30px;
+}
 .wrap3 {
-  align-items: center;
-  margin-top: 350px;
-  width: 112px;
-  height: 112px;
+  margin-top: 400px;
   position: absolute;
   background: #f3f5f6;
+  left: 50%;
+  bottom: 100px;
+  width: 112px;
+  height: 112px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transform: translateX(-50%);
+  padding: 0 15px;
 }
 
-#arrow1 {
-  left: 50px;
+#arrow1,
+#arrow2 {
+  width: 30px;
+  height: 30px;
+  margin: 0 15px;
 }
