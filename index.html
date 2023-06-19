@@ -7,21 +7,12 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <style>
-      body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-      }
-    </style>
   </head>
-  <body>
+  <body class="d-flex justify-content-center align-items-center">
     <header>
-      <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <a class="navbar-brand" href="#">My site</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
@@ -33,7 +24,7 @@
                 <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#features">Feature</a>
+                <a class="nav-link" href="#contacts">Contacts</a>
               </li>
             </ul>
           </div>
@@ -41,11 +32,11 @@
       </header>
 
       <main>
-        <div class="container text-center">
+        <div class="container text-center" id="about">
           <div class="intro" id="intro">
             <h1>Welcome to my website</h1>
             <p>
-              Hi! I am Bill Gates, an American entrepreneur and philanthropist. I am the co-founder of Microsoft Corporation and one of the richest people in the world.
+              Hi! I am Bill Gates, an American entrepreneur and philanthropist.<br> I am the co-founder of Microsoft Corporation and one of the richest people in the world.
             </p>
             <button class="btn btn-primary">Learn more</button>
           </div>
@@ -63,28 +54,30 @@
                 Growing up, I was interested in technology and coding from a young age. I wrote my first computer program at age 13 and founded my first company, Traf-O-Data, at age 16. After graduating from Lakeside School, I went on to attend Harvard University, but dropped out after two years to start Microsoft with my childhood friend, Paul Allen.<br><br>
     
                 Microsoft became one of the world's largest and most successful software companies, revolutionizing the personal computer industry with our Windows operating system and Microsoft Office suite of productivity software. In addition to my work at Microsoft, I have also been heavily involved in philanthropy through the Bill and Melinda Gates Foundation, which focuses on improving global healthcare and reducing poverty.<br><br>
-    
-                Throughout my career, I have been recognized for my contributions to the technology industry and philanthropy, receiving numerous honors and awards including the Presidential Medal of Freedom. Today, I remain active in both technology and philanthropy, working to advance the field of artificial intelligence and to make the world a better place through innovative solutions to global problems.
               </p>
               
             </div>
           </div>
         </div>
-     
-        
 
-            <div class="achievements mt-5" id="achievements">
-              <div class="work">
+        <div class="container">
+          <div class="row mt-5 justify-content-center">
+            <div class="col-md-4">
+              <div class="work text-center">
                 <i class="fas fa-globe-europe"></i>
                 <p class="work-heading">Philanthropy</p>
                 <p class="work-text">Through the Bill and Melinda Gates Foundation, I have donated billions of dollars to various causes, including global health, education, and climate change</p>
               </div>
-              <div class="work">
+            </div>
+            <div class="col-md-4">
+              <div class="work text-center">
                 <i class="fas fa-laptop-code"></i>
                 <p class="work-heading">Microsoft</p>
                 <p class="work-text">I co-founded Microsoft in 1975, and it has since become one of the largest and most successful technology companies in the world</p>
               </div>
-              <div class="work">
+            </div>
+            <div class="col-md-4">
+              <div class="work text-center">
                 <i class="fas fa-graduation-cap"></i>
                 <p class="work-heading">Education</p>
                 <p class="work-text">I am a strong believer in the power of education, and I have been involved in various education initiatives, including the creation of the Gates Millennium Scholars Program</p>
@@ -94,9 +87,12 @@
         </div>
       </main>
 
-      <footer class="footer" id="contacts">
-        <p>Thank you for visiting my page!<div class="copy">&copy;2021 Bill Gate's Page</div></p><br>
-        <p>If you have questions, than ask me in Email!</p>
+      <footer class="footer bg-light py-4" id="contacts">
+        <div class="container text-center">
+          <p>Thank you for visiting my page!</p>
+          <div class="copy">&copy;2021 Bill Gate's Page</div>
+          <p>If you have questions, ask me via Email!</p>
+        </div>
       </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   </body>
