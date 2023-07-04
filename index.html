@@ -4,9 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>ToDoList</title>
   </head>
   <body>
-   
+    <header></header>
+    <main>
+      <section class="py-rem first-section">
+        <div class="container">
+          <h1>Main title</h1>
+          <hr class="my-rem" />
+          <form id="todoForm">
+            <label>
+              <span>ToDo:</span>
+              <input id="todoInput" type="text" placeholder="ToDo title" />
+            </label>
+            <input type="checkbox" name="" id="" />
+            <button type="submit">Save</button>
+          </form>
+          <br />
+          <hr />
+          <ul id="todoList"></ul>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="main.js"></script>
   </body>
 </html>
