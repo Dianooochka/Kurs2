@@ -7,6 +7,36 @@
     <title>Document</title>
   </head>
   <body>
-   
+    <header></header>
+    <main>
+      <section class="py-rem first-section">
+        <div class="container">
+          <h1>Main titel</h1>
+          <hr class="my-rem" />
+          <form id="timerForm">
+            <label>
+              <span>Enter timer interval (in sec.)</span>
+              <input type="number" name="interval" id="interval" min="0" />
+            </label>
+            <br />
+            <button type="submit">Start!</button>
+          </form>
+          <br />
+          <p style="font-size: 2rem; font-weight: 700">
+            <span id="timerRestH" style="display: none">0 h.</span>
+            <span id="timerRestM" style="display: none">0 m.</span>
+            <span id="timerRestS">0 s.</span>
+          </p>
+        </div>
+        <br />
+        <form id="timerForm">
+          <label for="interval">Set Interval </label>
+          <button type="button" id="pauseButton">Pause</button>
+        </form>
+        <div id="timerRestS"></div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="main.js"></script>
   </body>
 </html>
