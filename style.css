@@ -1,0 +1,43 @@
+.tabs-section {
+  margin-bottom: 1rem;
+}
+
+.nav-tabs {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+  padding: 0.5rem;
+}
+
+.nav-link {
+  border: none;
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.nav-link.active {
+  background-color: #fff;
+  border-top: 1px solid #dee2e6;
+  border-left: 1px solid #dee2e6;
+  border-right: 1px solid #dee2e6;
+  border-bottom: none;
+}
+
+.tab-content {
+  padding: 1rem;
+  border: 1px solid #dee2e6;
+  border-top: none;
+  background-color: #fff;
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+}
